@@ -1,5 +1,4 @@
-# youngin-lee-website
-[index.html](https://github.com/user-attachments/files/31925546/index.html)
+# youngin-lee-website[index.html](https://github.com/user-attachments/files/31925546/index.html)
 <!doctype html>
 <html lang="en">
 <head>
