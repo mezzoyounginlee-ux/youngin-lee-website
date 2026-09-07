@@ -4,10 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Youngin Lee — Mezzo-Soprano</title>
 <meta name="description" content="Youngin Lee — Korean mezzo-soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across Europe.">
-<div class="bio-container">
-  <div style="width: 100%; max-width: 400px; height: 500px; overflow: hidden; border: 1px solid var(--accent-gold); margin: 0 auto;">
-    <img src="profile.png" alt="Youngin Lee Profile" style="width: 100%; height: 100%; object-fit: cover;">
-  </div>
 <style>
 :root{--paper:#f3f0e9;--ink:#171716;--muted:#77736b;--line:#d8d3c8;--soft:#e9e5dc}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
