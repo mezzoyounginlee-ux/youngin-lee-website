@@ -4,7 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Youngin Lee — Mezzo-Soprano</title>
 <meta name="description" content="Youngin Lee — Korean mezzo-soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across Europe.">
-<img src="profile.png">
+<div class="bio-container">
+  <div style="width: 100%; max-width: 400px; height: 500px; overflow: hidden; border: 1px solid var(--accent-gold); margin: 0 auto;">
+    <img src="profile.png" alt="Youngin Lee Profile" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
 <style>
 :root{--paper:#f3f0e9;--ink:#171716;--muted:#77736b;--line:#d8d3c8;--soft:#e9e5dc}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
@@ -154,7 +157,7 @@ footer{padding:25px 4.5vw;background:#171716;color:#77736b;font-size:10px;letter
     <img src="image4.jpg" alt="Performance Photo 4" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
   <div style="height: 350px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.3);">
-    <img src="image5.jpg" alt="Performance Photo 5" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="image6.jpg" alt="Performance Photo 5" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
 </div></div><div class="media-card small" style="margin-top:20px"><div class="media-label" data-i18n="pressKit">Press Kit</div></div></div></div>
 </div></div></section>
