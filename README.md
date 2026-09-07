@@ -21,6 +21,7 @@ footer{padding:25px 4.5vw;background:#171716;color:#77736b;font-size:10px;letter
 @media(max-width:760px){.nav{padding:18px 6vw}.right-nav{gap:12px}.menu{gap:12px;font-size:8px}.langs{font-size:8px}.brand{font-size:16px}.hero{padding:100px 6vw 55px}.hero:before{width:100vw;height:100vw}h1{font-size:20vw}.next{grid-template-columns:1fr;gap:8px;margin-top:55px}.next-meta{text-align:left}.section{padding:90px 6vw}.section-grid{grid-template-columns:1fr;gap:30px}.cvgrid{grid-template-columns:1fr;gap:20px}.agenda-row{grid-template-columns:90px 1fr;gap:15px}.place{grid-column:2;text-align:left}.media-grid{grid-template-columns:1fr}.media-card{min-height:300px}.contact{padding:90px 6vw}footer{padding:20px 6vw;display:block}}
 </style>
 </head>
+  
 <body>
 <header class="nav">
 <a class="brand" href="#top">Youngin Lee</a>
