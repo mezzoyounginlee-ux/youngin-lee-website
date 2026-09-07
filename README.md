@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -139,7 +139,7 @@ footer{padding:25px 4.5vw;background:#171716;color:#77736b;font-size:10px;letter
 </div></div></section>
 
 <section class="section" id="media"><div class="section-grid"><div class="eyebrow">03 / <span data-i18n="mediaLabel">Media</span></div><div>
-<h2 data-i18n="mediaTitle">Watch.<br>Listen.<br>See.</h2><p class="body" data-i18n="mediaBody">The final version can place your strongest performance videos, audio recordings and professional photography here. The homepage is designed to work beautifully with a single portrait photograph.</p>
+<h2 data-i18n="mediaTitle">Watch.<br>Listen.<br>See.</h2><p class="body" data-i18n="mediaBody"></p>
 <div class="media-grid" style="margin-top:50px"><div class="media-card"><div class="media-label" data-i18n="featuredVideo">Featured Video · coming soon</div></div><div><div class="media-card small"><div class="media-label" data-i18n="photography">Photography</div><div class="media-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
   <div style="height: 350px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.3);">
     <img src="image1.jpg" alt="Performance Photo 1" style="width: 100%; height: 100%; object-fit: cover;">
