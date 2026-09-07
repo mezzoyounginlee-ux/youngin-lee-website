@@ -1,4 +1,5 @@
 # youngin-lee-website
+index.html
 <!doctype html>
 <html lang="en">
 <head>
@@ -167,3 +168,11 @@ window.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.lang
 </script>
 </body>
 </html>
+
+
+images
+    ├── hero.jpg
+    ├── portrait.jpg
+    ├── photo-01.jpg
+    ├── photo-02.jpg
+    └── photo-03.jpg
