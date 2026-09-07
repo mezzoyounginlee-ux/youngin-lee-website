@@ -150,7 +150,7 @@ footer{padding:25px 4.5vw;background:#171716;color:#77736b;font-size:10px;letter
     <img src="image3.jpg" alt="Performance Photo 3" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
   <div style="height: 350px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.3);">
-    <img src="image4.jpg" alt="Performance Photo 4" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="image5.jpg" alt="Performance Photo 4" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
   <div style="height: 350px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.3);">
     <img src="image6.jpg" alt="Performance Photo 5" style="width: 100%; height: 100%; object-fit: cover;">
