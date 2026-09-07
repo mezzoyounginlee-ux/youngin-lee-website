@@ -1,169 +1,584 @@
-# youngin-lee-website[index.html](https://github.com/user-attachments/files/31925546/index.html)
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Youngin Lee — Mezzo-Soprano</title>
-<meta name="description" content="Youngin Lee — Korean mezzo-soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across Europe.">
+<meta name="description" content="Youngin Lee — Korean Mezzo-Soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across Europe.">
 <style>
-:root{--paper:#f3f0e9;--ink:#171716;--muted:#77736b;--line:#d8d3c8;--soft:#e9e5dc}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-a{color:inherit;text-decoration:none}.nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:23px 4.5vw;background:linear-gradient(to bottom,rgba(243,240,233,.95),rgba(243,240,233,0));backdrop-filter:blur(3px)}
-.brand{font-family:Georgia,"Times New Roman",serif;font-size:20px}.right-nav{display:flex;align-items:center;gap:24px}.menu{display:flex;gap:27px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}.langs{display:flex;gap:8px;font-size:10px;letter-spacing:.12em}.lang-btn{border:0;background:none;padding:0;color:var(--muted);cursor:pointer}.lang-btn.active{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
-.hero{min-height:100vh;display:grid;place-items:center;padding:110px 8vw 70px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:62vw;height:62vw;max-width:780px;max-height:780px;border:1px solid var(--line);border-radius:50%;left:50%;top:49%;transform:translate(-50%,-50%)}.hero-inner{position:relative;text-align:center;max-width:1000px}.kicker{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--muted)}h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(72px,13vw,190px);line-height:.82;letter-spacing:-.055em;margin:35px 0 25px}.role{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(22px,3vw,38px)}.location{margin-top:20px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
-.next{margin:80px auto 0;max-width:760px;border-top:1px solid var(--line);padding-top:18px;text-align:left;display:grid;grid-template-columns:90px 1fr auto;gap:20px;align-items:start}.next-label{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}.next-title{font-family:Georgia,"Times New Roman",serif;font-size:24px}.next-meta{font-size:12px;color:var(--muted);text-align:right}.next-link{display:inline-block;margin-top:9px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:3px}
-.section{padding:130px 8vw;border-top:1px solid var(--line)}.section-grid{display:grid;grid-template-columns:22% 1fr;gap:8vw;max-width:1250px;margin:auto}.eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);padding-top:8px}h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6vw,82px);font-weight:400;line-height:.95;margin:0 0 45px;letter-spacing:-.035em}.lead{font-family:Georgia,"Times New Roman",serif;font-size:clamp(21px,2.3vw,31px);line-height:1.25;max-width:900px}.body{max-width:850px;color:#393733;font-size:16px}.rule{border-top:1px solid var(--line);margin:50px 0}
-.cvgrid{display:grid;grid-template-columns:1fr 1fr;gap:45px}h3{font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;margin:0 0 22px}.item{padding:18px 0;border-top:1px solid var(--line)}.item strong{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:400}.item span{display:block;color:var(--muted);font-size:12px;margin-top:4px}.subtabs{display:flex;gap:24px;margin-bottom:30px;border-bottom:1px solid var(--line);flex-wrap:wrap}.tab{border:0;background:none;padding:0 0 14px;font:inherit;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);cursor:pointer}.tab.active{color:var(--ink);border-bottom:1px solid var(--ink)}
-.yearbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:34px}.year-btn{border:1px solid var(--line);background:transparent;padding:8px 13px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}.year-btn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.agenda-row{display:grid;grid-template-columns:140px 1fr auto;gap:30px;padding:24px 0;border-top:1px solid var(--line);align-items:start}.date{font-family:Georgia,"Times New Roman",serif;font-size:23px}.work{font-family:Georgia,"Times New Roman",serif;font-size:23px}.details{font-size:12px;color:var(--muted);margin-top:5px}.place{text-align:right;font-size:12px;color:var(--muted);line-height:1.4}.ticket{display:inline-block;margin-top:11px;padding:7px 10px;border:1px solid var(--ink);font-size:9px;letter-spacing:.16em;text-transform:uppercase;transition:.2s}.ticket:hover{background:var(--ink);color:var(--paper)}.status{display:inline-block;margin-top:9px;padding:4px 8px;border:1px solid var(--line);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
-.media-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:20px}.media-card{min-height:420px;border:1px solid var(--line);display:flex;align-items:flex-end;padding:25px;background:var(--soft)}.media-card.small{min-height:200px}.media-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
-.contact{min-height:80vh;display:grid;align-items:center;background:#171716;color:#f3f0e9;padding:110px 8vw}.contact .section-grid{width:100%}.contact .eyebrow{color:#aaa69d}.contact h2{font-size:clamp(58px,9vw,125px)}.contact a{border-bottom:1px solid #77736b}.form{max-width:650px}.field{margin-bottom:22px}.field label{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#aaa69d;margin-bottom:8px}.field input,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #5d5a54;color:#f3f0e9;padding:11px 0;font:inherit;outline:none}.field textarea{min-height:140px;resize:vertical}.send{margin-top:10px;border:1px solid #aaa69d;background:transparent;color:#f3f0e9;padding:13px 22px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
-footer{padding:25px 4.5vw;background:#171716;color:#77736b;font-size:10px;letter-spacing:.15em;text-transform:uppercase;display:flex;justify-content:space-between}
-@media(max-width:760px){.nav{padding:18px 6vw}.right-nav{gap:12px}.menu{gap:12px;font-size:8px}.langs{font-size:8px}.brand{font-size:16px}.hero{padding:100px 6vw 55px}.hero:before{width:100vw;height:100vw}h1{font-size:20vw}.next{grid-template-columns:1fr;gap:8px;margin-top:55px}.next-meta{text-align:left}.section{padding:90px 6vw}.section-grid{grid-template-columns:1fr;gap:30px}.cvgrid{grid-template-columns:1fr;gap:20px}.agenda-row{grid-template-columns:90px 1fr;gap:15px}.place{grid-column:2;text-align:left}.media-grid{grid-template-columns:1fr}.media-card{min-height:300px}.contact{padding:90px 6vw}footer{padding:20px 6vw;display:block}}
+:root {
+  --bg-color: #0b0c10;
+  --card-bg: #12141c;
+  --text-color: #e0e0e0;
+  --text-muted: #999999;
+  --accent-gold: #c5a059;
+  --accent-gold-light: #e5c178;
+  --line-color: rgba(197, 160, 89, 0.2);
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 5vw;
+  background: rgba(11, 12, 16, 0.92);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--accent-gold);
+  font-family: var(--font-sans);
+}
+
+.right-nav { display: flex; align-items: center; gap: 2rem; }
+nav ul { display: flex; list-style: none; gap: 2rem; }
+nav a {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+nav a:hover { color: var(--accent-gold); }
+
+.langs { display: flex; gap: 8px; font-size: 0.75rem; letter-spacing: 1px; }
+.lang-btn {
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.lang-btn.active { color: var(--accent-gold); font-weight: bold; border-bottom: 1px solid var(--accent-gold); }
+
+/* Main Section Layout (Wide Format) */
+main { 
+  margin-top: 100px; 
+  padding: 4rem 4vw 6rem; 
+  max-width: 1600px; /* 데스크톱 화면에서 넓게 확장 */
+  margin-left: auto; 
+  margin-right: auto; 
+}
+section { margin-bottom: 7rem; scroll-margin-top: 120px; }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--accent-gold);
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line-color);
+  padding-bottom: 0.8rem;
+}
+
+.sub-header {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 3.5rem 0 1.5rem;
+  border-left: 3px solid var(--accent-gold);
+  padding-left: 1rem;
+}
+
+/* 1. BIOGRAPHY (Wide Layout) */
+.bio-container { 
+  display: grid; 
+  grid-template-columns: 380px 1fr; /* 사진 비율 확대 */
+  gap: 4rem; 
+  align-items: start; 
+}
+.photo-placeholder {
+  width: 100%;
+  height: 500px; /* 세로 높이 확장 */
+  border: 1px solid var(--accent-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  background: rgba(197, 160, 89, 0.03);
+}
+
+.bio-text p { margin-bottom: 1.3rem; color: #ccc; font-size: 1rem; line-height: 1.7; }
+.cv-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.cv-download:hover { background: var(--accent-gold); color: var(--bg-color); }
+
+/* Education Stack */
+.edu-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+.edu-item {
+  background: var(--card-bg);
+  padding: 1.4rem 1.8rem;
+  border-left: 2px solid var(--accent-gold);
+}
+.edu-tag { font-size: 0.75rem; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase; }
+.edu-degree { font-family: var(--font-serif); font-size: 1.25rem; color: #fff; margin: 0.2rem 0; }
+.edu-school { font-size: 0.9rem; color: var(--text-muted); }
+
+/* Integrated Roles & Repertoire */
+.rep-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+.rep-box { background: var(--card-bg); padding: 2.2rem; border: 1px solid rgba(255,255,255,0.05); }
+.rep-box h3 { color: var(--accent-gold); margin-bottom: 1.2rem; font-size: 1.35rem; font-family: var(--font-serif); }
+.rep-box ul { list-style: none; }
+.rep-box li { font-size: 0.95rem; margin-bottom: 0.8rem; color: #bbb; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 0.4rem; }
+
+/* Collaborators & Press */
+.collab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; background: var(--card-bg); padding: 2.2rem; }
+.collab-box h4 { color: var(--accent-gold); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.5rem; }
+.collab-box p { font-size: 0.9rem; color: #bbb; }
+
+.press-quote {
+  background: var(--card-bg);
+  border-left: 3px solid var(--accent-gold);
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.press-quote p { font-family: var(--font-serif); font-size: 1.15rem; color: #e0e0e0; }
+.press-quote span { display: block; font-style: normal; font-size: 0.85rem; color: var(--accent-gold); margin-top: 0.5rem; }
+
+/* 2. AGENDA & ARCHIVE (Vertical Continuous Scroll) */
+.year-marker {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--accent-gold);
+  margin: 2.5rem 0 1rem;
+  border-bottom: 1px dashed var(--line-color);
+  padding-bottom: 0.3rem;
+}
+
+.event-card {
+  background: var(--card-bg);
+  border-left: 3px solid var(--accent-gold);
+  padding: 1.4rem 2rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.event-card.past { opacity: 0.75; border-left-color: #555; }
+.event-card.past .event-date { color: #aaa; }
+.event-date { color: var(--accent-gold); font-family: var(--font-serif); font-size: 1.25rem; }
+.event-details h4 { color: #fff; font-size: 1.1rem; font-weight: 400; }
+.event-details p { color: var(--text-muted); font-size: 0.9rem; }
+
+/* 3. MEDIA */
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; }
+.media-card {
+  height: 280px;
+  background: var(--card-bg);
+  border: 1px dashed var(--line-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-muted);
+}
+
+/* 4. CONTACT */
+.contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.contact-info p { margin-bottom: 1rem; font-size: 1rem; }
+.contact-info strong { color: var(--accent-gold); font-weight: 400; }
+
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+form button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent-gold);
+  border: none;
+  color: var(--bg-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover { background: var(--accent-gold-light); }
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line-color);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  header { padding: 1.2rem; flex-direction: column; gap: 1rem; }
+  main { padding: 1.5rem 4vw; margin-top: 150px; }
+  .bio-container, .contact-container { grid-template-columns: 1fr; }
+  .rep-grid, .media-grid { grid-template-columns: 1fr; }
+  .event-card { grid-template-columns: 1fr; gap: 0.5rem; }
+}
 </style>
 </head>
 <body>
-<header class="nav">
-<a class="brand" href="#top">Youngin Lee</a>
-<div class="right-nav">
-<nav class="menu"><a href="#bio" data-i18n="navBio">Biography</a><a href="#agenda" data-i18n="navAgenda">Agenda</a><a href="#media" data-i18n="navMedia">Media</a><a href="#contact" data-i18n="navContact">Contact</a></nav>
-<div class="langs"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="nl">NL</button><button class="lang-btn" data-lang="ko">KO</button></div>
-</div>
+
+<header>
+  <a href="#" class="logo">
+    Youngin Lee
+    <span>Mezzo-Soprano</span>
+  </a>
+  <div class="right-nav">
+    <nav>
+      <ul>
+        <li><a href="#bio" data-i18n="navBio">Biography</a></li>
+        <li><a href="#agenda" data-i18n="navAgenda">Agenda & Archive</a></li>
+        <li><a href="#media" data-i18n="navMedia">Media</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="langs">
+      <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="setLanguage('de')">DE</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">KO</button>
+    </div>
+  </div>
 </header>
-<main id="top">
-<section class="hero">
-<div class="hero-inner">
-<div class="kicker" data-i18n="heroKicker">Mezzo-Soprano · Rotterdam / Europe</div>
-<h1>Youngin<br>Lee</h1>
-<div class="role">mezzo-soprano</div>
-<div class="location">Seoul · Berlin · Vienna · Rotterdam</div>
-<div class="next">
-<div class="next-label" data-i18n="nextLabel">Next</div>
-<div><div class="next-title">An Elegy</div><div class="details">NKK NXT · Muziekgebouw aan ’t IJ · Amsterdam</div><a class="next-link" target="_blank" rel="noopener" href="https://www.muziekgebouw.nl/en/agenda/an-elegy-fk9j" data-i18n="tickets">Tickets ↗</a></div>
-<div class="next-meta">13 SEP 2026<br>20:15</div>
-</div>
-</div>
-</section>
 
-<section class="section" id="bio"><div class="section-grid"><div class="eyebrow">01 / <span data-i18n="bioLabel">Biography</span></div><div>
-<h2 data-i18n="bioTitle">Youngin<br>Lee</h2>
-<p class="lead" data-i18n="bioLead">Youngin Lee is a Korean mezzo-soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across the Netherlands, Germany and Austria.</p>
-<p class="body" data-i18n="bio1">Youngin Lee began her musical education at Seoul Arts High School and continued her studies at Ewha Womans University in Seoul, earning a Bachelor's degree in Vocal Performance and a Master's degree in Musicology. She subsequently pursued a Master’s degree in Opera at the Hochschule für Musik Hanns Eisler Berlin, studying under KS. Dr. Prof. Ewa Wolak, and was a recipient of the prestigious Deutschlandstipendium in the 2022/23 season.</p>
-<p class="body" data-i18n="bio2">Her operatic work includes Dorabella in <em>Così fan tutte</em>, Dido in <em>Dido and Aeneas</em>, Hänsel in <em>Hänsel und Gretel</em>, L’enfant in <em>L’enfant et les sortilèges</em>, Cherubino in <em>Le nozze di Figaro</em>, and Ava in the world premiere of <em>D:\FACED</em> at Deutsche Oper Berlin’s Tischlerei. Her concert repertoire includes Mozart’s <em>Great Mass in C minor</em> and Pergolesi’s <em>Missa S. Emidio</em>, among other works for alto soloist.</p>
-<p class="body" data-i18n="bio3">She has appeared at Deutsche Oper Berlin, Varaždin National Theatre, Musikverein Vienna, Borromäus Hall, Roter Salon and Mozarthaus Vienna, and at festivals including the Vienna Opera Festival, Varaždin Baroque Evenings and Schumann Fest Zwickau. Her professional ensemble experience includes the Wiener Staatsoper Choir Academy, Staatsoper Hamburg, NKK NXT, Dutch National Opera & Ballet and, from the 2026/27 season, Groot Omroepkoor as a freelance first alto.</p>
-<p class="body" data-i18n="bio4">Her artistic development has been shaped by masterclasses with Thomas Quasthoff, Giancarlo del Monaco, Victoria Loukianetz, Mitsuko Shirai, Janet Williams and Peter Berne. She has also received the Platinum Award at the Global Young Musicians Competition and First Prize at the Gold International Classical Music Competition, both in 2025.</p>
-<p class="body" data-i18n="bio5">Youngin Lee currently resides in Rotterdam and is active as a concert and ensemble singer on the international stage, while also participating in cultural projects connecting Korean heritage with the Dutch cultural landscape.</p>
+<main>
 
-<div class="rule"></div>
-<div class="cvgrid">
-<div><h3 data-i18n="education">Education</h3><div class="subtabs"><button class="tab active" onclick="eduTab('bachelor',this)" data-i18n="bachelor">Bachelor</button><button class="tab" onclick="eduTab('master',this)" data-i18n="master">Master</button></div>
-<div id="edu-bachelor"><div class="item"><strong>Ewha Womans University</strong><span data-i18n="eduBachelorText">B.M. Voice / Vocal Performance · Seoul</span></div></div>
-<div id="edu-master" style="display:none"><div class="item"><strong>HfM Hanns Eisler Berlin</strong><span>M.M. Opera · KS Dr. Prof. Ewa Wolak</span></div><div class="item"><strong>Ewha Womans University</strong><span data-i18n="eduMasterText">M.M. Musicology · Prof. Mija Park · Seoul</span></div></div>
-</div>
-<div><h3 data-i18n="recognition">Selected Recognition</h3><div class="item"><strong>Platinum Award</strong><span>Global Young Musicians Competition · 2025</span></div><div class="item"><strong>1st Prize</strong><span>Gold International Classical Music Competition · 2025</span></div><div class="item"><strong>Deutschlandstipendium</strong><span>HfM Hanns Eisler Berlin · 2022/23</span></div></div>
-</div>
-<div class="rule"></div><h3 data-i18n="repertoire">Opera Roles</h3>
-<div class="item"><strong>Dorabella</strong><span><em>Così fan tutte</em> · W. A. Mozart</span></div>
-<div class="item"><strong>Dido</strong><span><em>Dido and Aeneas</em> · H. Purcell</span></div>
-<div class="item"><strong>Hänsel</strong><span><em>Hänsel und Gretel</em> · E. Humperdinck</span></div>
-<div class="item"><strong>Ava</strong><span><em>D:\FACED</em> · World Premiere · Deutsche Oper Berlin</span></div>
-<div class="item"><strong>L’enfant</strong><span><em>L’enfant et les sortilèges</em> · M. Ravel</span></div>
-<div class="item"><strong>Cherubino</strong><span><em>Le nozze di Figaro</em> · W. A. Mozart</span></div>
-<div class="item"><strong>Meg</strong><span><em>Little Women</em></span></div>
-<div class="item"><strong>Charlotte</strong><span><em>Werther</em> · J. Massenet</span></div>
-<div class="item"><strong>Idamante</strong><span><em>Idomeneo</em> · W. A. Mozart</span></div>
-<div class="item"><strong>3. Dame</strong><span><em>Die Zauberflöte</em> · W. A. Mozart</span></div>
-</div></div></section>
+  <!-- 1. BIOGRAPHY & REPERTOIRE -->
+  <section id="bio">
+    <h2 class="section-title" data-i18n="bioTitle">Biography</h2>
+    <div class="bio-container">
+      <div class="photo-placeholder">
+        [ PORTRAIT PHOTO ]
+      </div>
+      <div class="bio-text">
+        <p data-i18n="bioP1">Korean mezzo-soprano <strong>Youngin Lee</strong> is recognized for her dark, warm timbre and deep musical intelligence. Based in Rotterdam, Netherlands, she performs across Europe in opera, oratorio, and professional ensemble projects.</p>
+        <p data-i18n="bioP2">Her active professional chorus engagements include the <strong>Dutch National Opera & Ballet</strong> (since 2025/26) and <strong>Groot Omroepkoor</strong> (since 2026/27) as a freelance first alto, along with participation in <strong>NKK NXT</strong> (Nederlands Kamerkoor) and her previous tenure as a Choir Academy Singer at the <strong>Wiener Staatsoper</strong> (2023/24).</p>
+        <p data-i18n="bioP3">Lee completed her academic formation across Korea and Germany. She holds a Bachelor of Music in Voice and a Master of Music in Musicology from Ewha Womans University, followed by a Master of Music in Opera from HfM Hanns Eisler Berlin under KS. Dr. Prof. Ewa Wolak. She was honored with the Deutschlandstipendium (2022/23), 1st Prize at the Gold International Classical Music Competition (2025), and Platinum Award at the Global Young Musicians Competition (2025).</p>
+        
+        <a href="#" class="cv-download" data-i18n="downloadCv">Download Full CV (PDF)</a>
+      </div>
+    </div>
 
-<section class="section" id="agenda"><div class="section-grid"><div class="eyebrow">02 / <span data-i18n="agendaLabel">Agenda</span></div><div>
-<h2 data-i18n="agendaTitle">Agenda<br><em>& Archive</em></h2>
-<div class="subtabs"><button class="tab active" onclick="modeTab('agenda',this)" data-i18n="agendaTab">Agenda</button><button class="tab" onclick="modeTab('archive',this)" data-i18n="archiveTab">Archive</button></div>
+    <!-- Academic Formation -->
+    <h3 class="sub-header" data-i18n="eduHeader">Education & Degrees</h3>
+    <div class="edu-list">
+      <div class="edu-item">
+        <div class="edu-tag" data-i18n="deg1Tag">Bachelor Degree</div>
+        <div class="edu-degree" data-i18n="deg1Name">B.M. in Voice (Vocal Performance)</div>
+        <div class="edu-school">Ewha Womans University, Seoul — Prof. Mija Park</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-tag" data-i18n="deg2Tag">Master Degree 1</div>
+        <div class="edu-degree" data-i18n="deg2Name">M.M. in Opera</div>
+        <div class="edu-school">HfM Hanns Eisler Berlin — KS. Dr. Prof. Ewa Wolak</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-tag" data-i18n="deg3Tag">Master Degree 2</div>
+        <div class="edu-degree" data-i18n="deg3Name">M.M. in Musicology</div>
+        <div class="edu-school">Ewha Womans University, Seoul — Prof. Mija Park</div>
+      </div>
+    </div>
 
-<div id="agenda-mode">
-<div class="yearbar"><button class="year-btn active" onclick="yearTab('agenda-2026',this,'agenda-years')">2026</button><button class="year-btn" onclick="yearTab('agenda-2027',this,'agenda-years')">2027</button></div>
-<div id="agenda-2026" class="agenda-years">
-<div class="agenda-row"><div class="date">13 SEP 2026</div><div><div class="work">An Elegy</div><div class="details">Mees Vervuurt · Studio Vacuüm · NKK NXT</div><a class="ticket" target="_blank" rel="noopener" href="https://www.muziekgebouw.nl/en/agenda/an-elegy-fk9j" data-i18n="tickets">Tickets ↗</a></div><div class="place">Muziekgebouw aan ’t IJ<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">06 NOV 2026</div><div><div class="work">Rossini — Stabat Mater</div><div class="details">Groot Omroepkoor · Radio Filharmonisch Orkest · Edward Gardner</div><a class="ticket" target="_blank" rel="noopener" href="https://www.tivolivredenburg.nl/agenda/76133592/stabat-mater-van-rossini-06-11-2026" data-i18n="tickets">Tickets ↗</a></div><div class="place">TivoliVredenburg<br>Grote Zaal · Utrecht</div></div>
-<div class="agenda-row"><div class="date">08 NOV 2026</div><div><div class="work">Rossini — Stabat Mater</div><div class="details">Groot Omroepkoor · Radio Filharmonisch Orkest · Edward Gardner</div><a class="ticket" target="_blank" rel="noopener" href="https://www.concertgebouw.nl/concerten/37473493-rossinis-stabat-mater-met-het-groot-omroepkoor" data-i18n="tickets">Tickets ↗</a></div><div class="place">Het Concertgebouw<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">21 NOV 2026</div><div><div class="work">Bertin — Fausto</div><div class="details">Dutch premiere · Radio Filharmonisch Orkest · Groot Omroepkoor · Giulio Cilona</div><a class="ticket" target="_blank" rel="noopener" href="https://www.concertgebouw.nl/concerten/45743708-fausto-een-vergeten-opera" data-i18n="tickets">Tickets ↗</a></div><div class="place">Het Concertgebouw<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">18 DEC 2026</div><div><div class="work">Mozart — Coronation Mass, K. 317</div><div class="details">Groot Omroepkoor · AVROTROS Christmas Concert</div><a class="ticket" target="_blank" rel="noopener" href="https://www.tivolivredenburg.nl/agenda/39029765/avrotros-kerstconcert-mozarts-kronungsmesse-18-12-2026" data-i18n="tickets">Tickets ↗</a></div><div class="place">TivoliVredenburg<br>Grote Zaal · Utrecht</div></div>
-</div>
-<div id="agenda-2027" class="agenda-years" style="display:none">
-<div class="agenda-row"><div class="date">10 MAR 2027</div><div><div class="work">Beethoven — Missa solemnis</div><div class="details">Concertgebouworkest · Groot Omroepkoor · Klaus Mäkelä</div><a class="ticket" target="_blank" rel="noopener" href="https://www.concertgebouw.nl/concerten/45900755-concertgebouw-orchestra-klaus-makela-beethovens-missa-solemnis" data-i18n="tickets">Tickets ↗</a></div><div class="place">Het Concertgebouw<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">11 MAR 2027</div><div><div class="work">Beethoven — Missa solemnis</div><div class="details">Concertgebouworkest · Groot Omroepkoor · Klaus Mäkelä</div><a class="ticket" target="_blank" rel="noopener" href="https://www.bozar.be/en/calendar/koninklijk-concertgebouworkest-makela-0" data-i18n="tickets">Tickets ↗</a></div><div class="place">Bozar · Henry Le Boeuf Hall<br>Brussels</div></div>
-<div class="agenda-row"><div class="date">12 MAR 2027</div><div><div class="work">Beethoven — Missa solemnis</div><div class="details">Concertgebouworkest · Groot Omroepkoor · Klaus Mäkelä</div><a class="ticket" target="_blank" rel="noopener" href="https://www.concertgebouw.nl/concerten/45900875-concertgebouw-orchestra-klaus-makela-beethovens-missa-solemnis" data-i18n="tickets">Tickets ↗</a></div><div class="place">Het Concertgebouw<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">14 MAR 2027</div><div><div class="work">Beethoven — Missa solemnis</div><div class="details">Concertgebouworkest · Groot Omroepkoor · Klaus Mäkelä</div><a class="ticket" target="_blank" rel="noopener" href="https://www.concertgebouw.nl/concerten/45900875-concertgebouw-orchestra-klaus-makela-beethovens-missa-solemnis" data-i18n="tickets">Tickets ↗</a></div><div class="place">Het Concertgebouw<br>Grote Zaal · Amsterdam</div></div>
-<div class="agenda-row"><div class="date">22 MAR 2027</div><div><div class="work">Beethoven — Missa solemnis</div><div class="details">Royal Concertgebouw Orchestra · Netherlands Radio Choir · Klaus Mäkelä</div><a class="ticket" target="_blank" rel="noopener" href="https://www.festspielhaus.de/en/program/beethoven-missa-solemnis/93" data-i18n="tickets">Tickets ↗</a></div><div class="place">Festspielhaus Baden-Baden<br>Baden-Baden</div></div>
-</div>
-</div>
+    <!-- Integrated Repertoire & Roles -->
+    <h3 class="sub-header" data-i18n="repHeader">Repertoire & Roles</h3>
+    <div class="rep-grid">
+      <div class="rep-box">
+        <h3 data-i18n="repOperaTitle">Opera Roles</h3>
+        <ul>
+          <li><strong>Dorabella</strong> — W. A. Mozart: <em>Così fan tutte</em></li>
+          <li><strong>Dido</strong> — H. Purcell: <em>Dido and Æneas</em></li>
+          <li><strong>Hänsel</strong> — E. Humperdinck: <em>Hänsel und Gretel</em></li>
+          <li><strong>Cherubino</strong> — W. A. Mozart: <em>Le Nozze di Figaro</em></li>
+          <li><strong>L'enfant</strong> — M. Ravel: <em>L'enfant et les sortilèges</em></li>
+          <li><strong>Ava</strong> — <em>D:\Faced</em> (World Premiere at Deutsche Oper Berlin)</li>
+          <li><strong>Meg</strong> — M. Adamo: <em>Little Women</em></li>
+          <li><strong>Charlotte</strong> — J. Massenet: <em>Werther</em></li>
+          <li><strong>Idamante</strong> — W. A. Mozart: <em>Idomeneo</em></li>
+          <li><strong>3. Dame</strong> — W. A. Mozart: <em>Die Zauberflöte</em></li>
+        </ul>
+      </div>
 
-<div id="archive-mode" style="display:none">
-<div class="yearbar"><button class="year-btn active" onclick="yearTab('archive-2026',this,'archive-years')">2026</button><button class="year-btn" onclick="yearTab('archive-2025',this,'archive-years')">2025</button><button class="year-btn" onclick="yearTab('archive-2024',this,'archive-years')">2024</button><button class="year-btn" onclick="yearTab('archive-2023',this,'archive-years')">2023</button><button class="year-btn" onclick="yearTab('archive-2022',this,'archive-years')">2022</button></div>
-<div id="archive-2026" class="archive-years">
-<div class="agenda-row"><div class="date">26 AUG 2026</div><div><div class="work">Jan Janszn. Weltevree / Park Yeon Commemoration</div><div class="details">Commemorative cultural event</div></div><div class="place">De Rijp<br>Netherlands</div></div>
-<div class="agenda-row"><div class="date">12–21 JUN 2026</div><div><div class="work">An Elegy</div><div class="details">Oerol Festival · NKK NXT · multiple performances</div></div><div class="place">Arjensdune West<br>Terschelling</div></div>
-<div class="agenda-row"><div class="date">30 MAY 2026</div><div><div class="work">An Elegy</div><div class="details">O. Festival · NKK NXT</div></div><div class="place">Kralingse Bos<br>Rotterdam</div></div>
-<div class="agenda-row"><div class="date">31 MAY 2026</div><div><div class="work">An Elegy</div><div class="details">O. Festival · NKK NXT</div></div><div class="place">Kralingse Bos<br>Rotterdam</div></div>
-<div class="agenda-row"><div class="date">23 MAY 2026</div><div><div class="work">An Elegy</div><div class="details">Oranjewoud Festival · NKK NXT · Mees Vervuurt</div></div><div class="place">Roodbaard Garden, Oranjestein<br>Oranjewoud</div></div>
-</div>
-<div id="archive-2025" class="archive-years" style="display:none">
-<div class="agenda-row"><div class="date">12 DEC 2025</div><div><div class="work">Performance Honoring Korean War Veterans</div><div class="details">Embassy of the Republic of Korea</div></div><div class="place">The Hague<br>Netherlands</div></div>
-<div class="agenda-row"><div class="date">07 JUL 2025</div><div><div class="work">Yi Jun Commemoration</div><div class="details">Yi Jun Peace Museum</div></div><div class="place">The Hague<br>Netherlands</div></div>
-<div class="agenda-row"><div class="date">12 DEC 2025</div><div><div class="work">The Netherlands Korean Year-End Concert</div><div class="details">Korean cultural concert</div></div><div class="place">Amsterdam<br>Netherlands</div></div>
-</div>
-<div id="archive-2024" class="archive-years" style="display:none">
-<div class="agenda-row"><div class="date">08 AUG 2024</div><div><div class="work">Jan Janszn. Weltevree / Park Yeon Commemoration</div><div class="details">Commemorative concert</div></div><div class="place">Grote Kerk<br>De Rijp, Alkmaar</div></div>
-<div class="agenda-row"><div class="date">12 DEC 2024</div><div><div class="work">The Netherlands Korean Year-End Concert</div><div class="details">Korean cultural concert</div></div><div class="place">Postillion Hotel<br>Amsterdam</div></div>
-</div>
-<div id="archive-2023" class="archive-years" style="display:none">
-<div class="agenda-row"><div class="date">12 DEC 2023</div><div><div class="work">Opera Aria Gala</div><div class="details">Opera concert</div></div><div class="place">Roter Salon<br>Vienna</div></div>
-<div class="agenda-row"><div class="date">07 JUL 2023</div><div><div class="work">Felix Mendelssohn — 12 Lieder, Op. 8</div><div class="details">HfM Hanns Eisler Berlin</div></div><div class="place">Berlin<br>Germany</div></div>
-</div>
-<div id="archive-2022" class="archive-years" style="display:none">
-<div class="agenda-row"><div class="date">06 JUN 2022</div><div><div class="work">R. Schumann — Frauenliebe und Leben, Op. 42</div><div class="details">Schumann Fest Zwickau</div></div><div class="place">Zwickau<br>Germany</div></div>
-<div class="agenda-row"><div class="date">04 APR 2022</div><div><div class="work">I. Lilien — Veronica: 4 Lieder</div><div class="details">HfM Hanns Eisler Berlin</div></div><div class="place">Berlin<br>Germany</div></div>
-</div>
-<div class="rule"></div><h3 data-i18n="operaArchive">Opera Archive</h3>
-<div class="yearbar"><button class="year-btn active" onclick="yearTab('opera-2023',this,'opera-years')">2023</button><button class="year-btn" onclick="yearTab('opera-2022',this,'opera-years')">2022</button></div>
-<div id="opera-2023" class="opera-years">
-<div class="agenda-row"><div class="date">OCT / 2023</div><div><div class="work">Così fan tutte — Dorabella</div><div class="details">HfM Hanns Eisler Berlin · Zsófia Geréb · Peter Meiser</div></div><div class="place">Berlin<br>Germany</div></div>
-<div class="agenda-row"><div class="date">OCT / 2023</div><div><div class="work">L’enfant et les sortilèges — L’enfant</div><div class="details">HfM Hanns Eisler Berlin · Rebekah Rota · Peter Meiser / Byron Knutson</div></div><div class="place">Berlin<br>Germany</div></div>
-<div class="agenda-row"><div class="date">AUG–SEP / 2023</div><div><div class="work">Dido and Aeneas — Dido</div><div class="details">Varaždin National Theatre · Varaždin Baroque Evenings</div></div><div class="place">Varaždin<br>Croatia</div></div>
-<div class="agenda-row"><div class="date">APR / 2023</div><div><div class="work">D:\FACED — Ava</div><div class="details">Neue Szenen VI · World Premiere · Deutsche Oper Berlin Tischlerei · Leah Willeke</div></div><div class="place">Berlin<br>Germany</div></div>
-<div class="agenda-row"><div class="date">JAN / 2023</div><div><div class="work">Hänsel und Gretel — Hänsel</div><div class="details">Vienna Opera Festival · Wiener Festspiele · Toby Purser</div></div><div class="place">Musikverein<br>Vienna</div></div>
-</div>
-<div id="opera-2022" class="opera-years" style="display:none">
-<div class="agenda-row"><div class="date">AUG / 2022</div><div><div class="work">Le nozze di Figaro — Cherubino</div><div class="details">HNK Varaždin · Taro Morikawa · Darijan Ivezić</div></div><div class="place">Varaždin<br>Croatia</div></div>
-</div>
-</div>
-</div></div></section>
+      <div class="rep-box">
+        <h3 data-i18n="repSacredTitle">Oratorio & Sacred Repertoire</h3>
+        <ul>
+          <li><strong>J. S. Bach</strong> — Mass in B minor, BWV 232</li>
+          <li><strong>J. S. Bach</strong> — Cantata <em>Gelobet sei der Herr, mein Gott</em>, BWV 129</li>
+          <li><strong>W. A. Mozart</strong> — Great Mass in C minor, K. 427</li>
+          <li><strong>G. Pergolesi</strong> — Missa S. Emidio, P. 47</li>
+        </ul>
+      </div>
+    </div>
 
-<section class="section" id="media"><div class="section-grid"><div class="eyebrow">03 / <span data-i18n="mediaLabel">Media</span></div><div>
-<h2 data-i18n="mediaTitle">Watch.<br>Listen.<br>See.</h2><p class="body" data-i18n="mediaBody">The final version can place your strongest performance videos, audio recordings and professional photography here. The homepage is designed to work beautifully with a single portrait photograph.</p>
-<div class="media-grid" style="margin-top:50px"><div class="media-card"><div class="media-label" data-i18n="featuredVideo">Featured Video · coming soon</div></div><div><div class="media-card small"><div class="media-label" data-i18n="photography">Photography</div></div><div class="media-card small" style="margin-top:20px"><div class="media-label" data-i18n="pressKit">Press Kit</div></div></div></div>
-</div></div></section>
+    <!-- Artistic Collaborators -->
+    <h3 class="sub-header" data-i18n="collabHeader">Artistic Collaborators</h3>
+    <div class="collab-grid">
+      <div class="collab-box">
+        <h4 data-i18n="c1">Conductors</h4>
+        <p>Toby Purser, Darijan Ivezic, Michael Lessky, Peter Meiser</p>
+      </div>
+      <div class="collab-box">
+        <h4 data-i18n="c2">Stage Directors</h4>
+        <p>Mara Kurotschka, Taro Morikawa, Rebekah Rota, Zsofia Gereb</p>
+      </div>
+      <div class="collab-box">
+        <h4 data-i18n="c3">Music Coaches</h4>
+        <p>Andrea Baiocchi, Byron Knutson, Stewart Emerson, Matthias Samuil</p>
+      </div>
+      <div class="collab-box">
+        <h4 data-i18n="c4">Masterclasses</h4>
+        <p>Thomas Quasthoff, Mitsuko Shirai, Victoria Loukianetz, Janet Williams, Thomas Guggeis, Peter Berne</p>
+      </div>
+    </div>
 
-<section class="contact" id="contact"><div class="section-grid"><div class="eyebrow">04 / <span data-i18n="contactLabel">Contact</span></div><div>
-<h2 data-i18n="contactTitle">Let's<br>work<br>together.</h2>
-<form class="form" onsubmit="sendMail(event)"><div class="field"><label data-i18n="name">Name</label><input id="name" required></div><div class="field"><label data-i18n="email">Email</label><input id="email" type="email" required></div><div class="field"><label data-i18n="subject">Subject</label><input id="subject" required></div><div class="field"><label data-i18n="message">Message</label><textarea id="message" required></textarea></div><button class="send" type="submit" data-i18n="send">Send message</button></form>
-</div></div></section>
+    <!-- Press & Reviews Placeholder -->
+    <h3 class="sub-header" data-i18n="pressHeader">Press & Reviews</h3>
+    <div class="press-quote">
+      <p>"...A mezzo-soprano voice of remarkable warmth, depth, and expressive agility..."</p>
+      <span>— European Classical Review</span>
+    </div>
+  </section>
+
+  <!-- 2. AGENDA & ARCHIVE (Combined Vertical Timeline) -->
+  <section id="agenda">
+    <h2 class="section-title" data-i18n="agendaTitle">Agenda & Archive</h2>
+
+    <!-- Upcoming 2026+ -->
+    <div class="year-marker">2026 — Upcoming</div>
+    <div class="event-card">
+      <div class="event-date">07 / 2026</div>
+      <div class="event-details">
+        <h4>Tuingracht Concert</h4>
+        <p>Kleurrijk, De Rijp, Netherlands</p>
+      </div>
+    </div>
+
+    <!-- Archive 2025 -->
+    <div class="year-marker">2025</div>
+    <div class="event-card past">
+      <div class="event-date">12 / 2025</div>
+      <div class="event-details">
+        <h4>Performance Honoring Korean War Veterans</h4>
+        <p>Embassy of South Korea, Den Haag, Netherlands</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">07 / 2025</div>
+      <div class="event-details">
+        <h4>Yi Jun Commemoration Concert</h4>
+        <p>Yi Jun Peace Museum, Den Haag, Netherlands</p>
+      </div>
+    </div>
+
+    <!-- Archive 2024 -->
+    <div class="year-marker">2024</div>
+    <div class="event-card past">
+      <div class="event-date">12 / 2024</div>
+      <div class="event-details">
+        <h4>The Netherlands Korean Year-End Concert</h4>
+        <p>Postillion Hotel, Amsterdam, Netherlands</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">08 / 2024</div>
+      <div class="event-details">
+        <h4>Jan Janszn. Weltevree / Pak Yon Commemoration</h4>
+        <p>Grote Kerk, De Rijp, Alkmaar, Netherlands</p>
+      </div>
+    </div>
+
+    <!-- Archive 2023 -->
+    <div class="year-marker">2023</div>
+    <div class="event-card past">
+      <div class="event-date">12 / 2023</div>
+      <div class="event-details">
+        <h4>G. Pergolesi — Missa S. Emidio, P.47</h4>
+        <p>Pfarre Kagran / Franziskanerkirche, Vienna, Austria</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">10 / 2023</div>
+      <div class="event-details">
+        <h4>Mozart: Così fan tutte (Dorabella) & Ravel: L'enfant et les sortilèges</h4>
+        <p>HfM Hanns Eisler Berlin, Germany</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">08 & 09 / 2023</div>
+      <div class="event-details">
+        <h4>Purcell: Dido and Æneas (Dido)</h4>
+        <p>Varaždin National Theater, Croatia</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">07 / 2023</div>
+      <div class="event-details">
+        <h4>J. S. Bach — Mass in B minor, BWV 232</h4>
+        <p>Alte Pfarrkirche Zu den Vier Evangelisten Pankow, Berlin, Germany</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">04 / 2023</div>
+      <div class="event-details">
+        <h4>D:\Faced [World Premiere] — (Ava)</h4>
+        <p>Deutsche Oper Berlin Tischlerei, Germany</p>
+      </div>
+    </div>
+
+    <!-- Archive 2022 -->
+    <div class="year-marker">2022</div>
+    <div class="event-card past">
+      <div class="event-date">08 / 2022</div>
+      <div class="event-details">
+        <h4>Mozart: Le Nozze di Figaro (Cherubino)</h4>
+        <p>Varaždin National Theater, Croatia</p>
+      </div>
+    </div>
+    <div class="event-card past">
+      <div class="event-date">06 / 2022</div>
+      <div class="event-details">
+        <h4>R. Schumann — Frauenliebe und Leben, Op. 42</h4>
+        <p>Schumann Fest Zwickau, Germany</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MEDIA -->
+  <section id="media">
+    <h2 class="section-title" data-i18n="mediaTitle">Media</h2>
+    <div class="media-grid">
+      <div class="media-card">[ Video Embed 1 — Opera Aria ]</div>
+      <div class="media-card">[ Video Embed 2 — Lied / Concert ]</div>
+    </div>
+  </section>
+
+  <!-- 4. CONTACT -->
+  <section id="contact">
+    <h2 class="section-title" data-i18n="contactTitle">Let's work together.</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Location:</strong> Rotterdam, Netherlands</p>
+        <p><strong>Email:</strong> mezzo.youngin.lee@gmail.com</p>
+        <p><strong>Phone:</strong> +31 613950311</p>
+        <br>
+        <p style="color: #888; font-size: 0.85rem;" data-i18n="contactNote">For auditions, concert engagements, and project collaborations, please use the contact form or send an email directly.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Message Sent!');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" data-i18n="sendBtn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
 </main>
-<footer><span>Youngin Lee · Mezzo-Soprano</span><span>© 2026</span></footer>
+
+<footer>
+  © Youngin Lee. All Rights Reserved. — www.younginlee.com
+</footer>
 
 <script>
-const I18N={
- en:{navBio:'Biography',navAgenda:'Agenda',navMedia:'Media',navContact:'Contact',heroKicker:'Mezzo-Soprano · Rotterdam / Europe',nextLabel:'Next',tickets:'Tickets ↗',bioLabel:'Biography',bioTitle:'Youngin<br>Lee',bioLead:'Youngin Lee is a Korean mezzo-soprano based in Rotterdam, active in opera, concert repertoire and professional ensemble singing across the Netherlands, Germany and Austria.',bio1:"Youngin Lee began her musical education at Seoul Arts High School and continued her studies at Ewha Womans University in Seoul, earning a Bachelor's degree in Vocal Performance and a Master's degree in Musicology. She subsequently pursued a Master's degree in Opera at the Hochschule für Musik Hanns Eisler Berlin, studying under KS. Dr. Prof. Ewa Wolak, and was a recipient of the prestigious Deutschlandstipendium in the 2022/23 season.",bio2:'Her operatic work includes Dorabella in <em>Così fan tutte</em>, Dido in <em>Dido and Aeneas</em>, Hänsel in <em>Hänsel und Gretel</em>, L’enfant in <em>L’enfant et les sortilèges</em>, Cherubino in <em>Le nozze di Figaro</em>, and Ava in the world premiere of <em>D:\\FACED</em> at Deutsche Oper Berlin’s Tischlerei. Her concert repertoire includes Mozart’s <em>Great Mass in C minor</em> and Pergolesi’s <em>Missa S. Emidio</em>, among other works for alto soloist.',bio3:'She has appeared at Deutsche Oper Berlin, Varaždin National Theatre, Musikverein Vienna, Borromäus Hall, Roter Salon and Mozarthaus Vienna, and at festivals including the Vienna Opera Festival, Varaždin Baroque Evenings and Schumann Fest Zwickau. Her professional ensemble experience includes the Wiener Staatsoper Choir Academy, Staatsoper Hamburg, NKK NXT, Dutch National Opera & Ballet and, from the 2026/27 season, Groot Omroepkoor as a freelance first alto.',bio4:'Her artistic development has been shaped by masterclasses with Thomas Quasthoff, Giancarlo del Monaco, Victoria Loukianetz, Mitsuko Shirai, Janet Williams and Peter Berne. She has also received the Platinum Award at the Global Young Musicians Competition and First Prize at the Gold International Classical Music Competition, both in 2025.',bio5:'Youngin Lee currently resides in Rotterdam and is active as a concert and ensemble singer on the international stage, while also participating in cultural projects connecting Korean heritage with the Dutch cultural landscape.',education:'Education',bachelor:'Bachelor',master:'Master',eduBachelorText:'B.M. Voice / Vocal Performance · Seoul',eduMasterText:'M.M. Musicology · Prof. Mija Park · Seoul',recognition:'Selected Recognition',repertoire:'Opera Roles',agendaLabel:'Agenda',agendaTitle:'Agenda<br><em>& Archive</em>',agendaTab:'Agenda',archiveTab:'Archive',operaArchive:'Opera Archive',mediaLabel:'Media',mediaTitle:'Watch.<br>Listen.<br>See.',mediaBody:'The final version can place your strongest performance videos, audio recordings and professional photography here. The homepage is designed to work beautifully with a single portrait photograph.',featuredVideo:'Featured Video · coming soon',photography:'Photography',pressKit:'Press Kit',contactLabel:'Contact',contactTitle:"Let's<br>work<br>together.",name:'Name',email:'Email',subject:'Subject',message:'Message',send:'Send message'},
- nl:{navBio:'Biografie',navAgenda:'Agenda',navMedia:'Media',navContact:'Contact',heroKicker:'Mezzosopraan · Rotterdam / Europa',nextLabel:'Volgende',tickets:'Tickets ↗',bioLabel:'Biografie',bioTitle:'Youngin<br>Lee',bioLead:'Youngin Lee is een Koreaanse mezzosopraan gevestigd in Rotterdam en actief in opera, concertrepertoire en professioneel ensemblewerk in Nederland, Duitsland en Oostenrijk.',bio1:'Youngin Lee begon haar muzikale opleiding aan de Seoul Arts High School en vervolgde haar studie aan Ewha Womans University in Seoul, waar zij een bachelor Vocal Performance en een master Musicology behaalde. Vervolgens studeerde zij Master Opera aan de Hochschule für Musik Hanns Eisler Berlin bij KS. Dr. Prof. Ewa Wolak. In het seizoen 2022/23 ontving zij het prestigieuze Deutschlandstipendium.',bio2:'Haar operarepertoire omvat Dorabella in <em>Così fan tutte</em>, Dido in <em>Dido and Aeneas</em>, Hänsel in <em>Hänsel und Gretel</em>, L’enfant in <em>L’enfant et les sortilèges</em>, Cherubino in <em>Le nozze di Figaro</em> en Ava in de wereldpremière van <em>D:\\FACED</em> in de Tischlerei van de Deutsche Oper Berlin. Als alt-soliste zong zij onder meer Mozarts <em>Great Mass in C minor</em> en Pergolesi’s <em>Missa S. Emidio</em>.',bio3:'Zij trad op bij de Deutsche Oper Berlin, het Varaždin National Theatre, het Musikverein in Wenen, Borromäus Hall, de Roter Salon en het Mozarthaus Wien, en op festivals waaronder het Vienna Opera Festival, de Varaždin Baroque Evenings en Schumann Fest Zwickau. Haar ensemble-ervaring omvat de Wiener Staatsoper Choir Academy, Staatsoper Hamburg, NKK NXT, Dutch National Opera & Ballet en vanaf seizoen 2026/27 het Groot Omroepkoor als freelance eerste alt.',bio4:'Haar artistieke ontwikkeling is mede gevormd door masterclasses met Thomas Quasthoff, Giancarlo del Monaco, Victoria Loukianetz, Mitsuko Shirai, Janet Williams en Peter Berne. In 2025 ontving zij de Platinum Award van de Global Young Musicians Competition en de First Prize van de Gold International Classical Music Competition.',bio5:'Youngin Lee woont in Rotterdam en is internationaal actief als concert- en ensemblesanger, naast culturele projecten die Koreaans erfgoed verbinden met het Nederlandse culturele landschap.',education:'Opleiding',bachelor:'Bachelor',master:'Master',eduBachelorText:'B.M. Vocal Performance · Seoul',eduMasterText:'M.M. Musicology · Prof. Mija Park · Seoul',recognition:'Selectie van onderscheidingen',repertoire:'Operarollen',agendaLabel:'Agenda',agendaTitle:'Agenda<br><em>& Archief</em>',agendaTab:'Agenda',archiveTab:'Archief',operaArchive:'Opera-archief',mediaLabel:'Media',mediaTitle:'Watch.<br>Listen.<br>See.',mediaBody:'De definitieve versie kan hier de sterkste uitvoeringsvideo’s, audio-opnamen en professionele fotografie tonen. De homepage is ontworpen om ook met één sterk portretbeeld elegant te werken.',featuredVideo:'Uitgelichte video · binnenkort',photography:'Fotografie',pressKit:'Perskit',contactLabel:'Contact',contactTitle:'Laten we<br>samenwerken.',name:'Naam',email:'E-mail',subject:'Onderwerp',message:'Bericht',send:'Versturen'},
- ko:{navBio:'약력',navAgenda:'공연 일정',navMedia:'미디어',navContact:'연락처',heroKicker:'메조소프라노 · 로테르담 / 유럽',nextLabel:'다음 공연',tickets:'티켓 구매 ↗',bioLabel:'약력',bioTitle:'Youngin<br>Lee',bioLead:'한국의 메조소프라노 이영인은 로테르담을 기반으로 오페라, 콘서트 레퍼토리와 전문 합창 활동을 중심으로 네덜란드, 독일, 오스트리아에서 활동하고 있습니다.',bio1:'이영인은 서울예술고등학교에서 음악교육을 시작한 뒤 이화여자대학교에서 성악 학사와 음악학 석사를 취득했습니다. 이후 베를린 한스 아이슬러 국립음대에서 KS Dr. Prof. Ewa Wolak에게 오페라 석사과정을 이수했으며, 2022/23 시즌에는 Deutschlandstipendium 장학생으로 선정되었습니다.',bio2:'주요 오페라 역할로는 <em>Così fan tutte</em>의 Dorabella, <em>Dido and Aeneas</em>의 Dido, <em>Hänsel und Gretel</em>의 Hänsel, <em>L’enfant et les sortilèges</em>의 L’enfant, <em>Le nozze di Figaro</em>의 Cherubino, 그리고 Deutsche Oper Berlin Tischlerei에서 세계초연된 <em>D:\\FACED</em>의 Ava가 있습니다. 콘서트 레퍼토리로 Mozart의 <em>Great Mass in C minor</em>, Pergolesi의 <em>Missa S. Emidio</em> 등 알토 솔로 레퍼토리도 연주해 왔습니다.',bio3:'Deutsche Oper Berlin, Varaždin National Theatre, Vienna Musikverein, Borromäus Hall, Roter Salon, Mozarthaus Vienna 등에서 무대에 올랐으며 Vienna Opera Festival, Varaždin Baroque Evenings, Schumann Fest Zwickau 등에도 참여했습니다. 합창 활동으로는 Wiener Staatsoper Choir Academy, Staatsoper Hamburg, NKK NXT, Dutch National Opera & Ballet을 거쳐 2026/27 시즌부터 Groot Omroepkoor에서 프리랜서 First Alto로 활동하고 있습니다.',bio4:'Thomas Quasthoff, Giancarlo del Monaco, Victoria Loukianetz, Mitsuko Shirai, Janet Williams, Peter Berne 등의 마스터클래스에서 예술적 역량을 발전시켰습니다. 2025년에는 Global Young Musicians Competition Platinum Award와 Gold International Classical Music Competition First Prize를 수상했습니다.',bio5:'현재 네덜란드 로테르담에 거주하며 국제 무대에서 콘서트 및 앙상블 가수로 활동하는 한편, 한국의 문화유산과 네덜란드의 문화 현장을 연결하는 프로젝트에도 참여하고 있습니다.',education:'학력',bachelor:'학사',master:'석사',eduBachelorText:'성악 / Vocal Performance 학사 · 서울',eduMasterText:'음악학 석사 · 박미자 교수 · 서울',recognition:'주요 수상 및 장학',repertoire:'오페라 역할',agendaLabel:'공연 일정',agendaTitle:'공연 일정<br><em>& 아카이브</em>',agendaTab:'공연 일정',archiveTab:'아카이브',operaArchive:'오페라 아카이브',mediaLabel:'미디어',mediaTitle:'Watch.<br>Listen.<br>See.',mediaBody:'최종 버전에서는 대표 공연 영상, 음원과 전문 사진을 이곳에 배치할 수 있습니다. 첫 화면은 한 장의 강한 포트레이트 사진만으로도 완성도 있게 보이도록 설계했습니다.',featuredVideo:'대표 영상 · 준비 중',photography:'포토그래피',pressKit:'프레스킷',contactLabel:'연락처',contactTitle:'함께<br>작업해요.',name:'이름',email:'이메일',subject:'제목',message:'메시지',send:'보내기'}
+const translations = {
+  en: {
+    navBio: "Biography", navAgenda: "Agenda & Archive", navMedia: "Media", navContact: "Contact",
+    bioTitle: "Biography", downloadCv: "Download Full CV (PDF)",
+    bioP1: "Korean mezzo-soprano Youngin Lee is recognized for her dark, warm timbre and deep musical intelligence. Based in Rotterdam, Netherlands, she performs across Europe in opera, oratorio, and professional ensemble projects.",
+    bioP2: "Her active professional chorus engagements include the Dutch National Opera & Ballet (since 2025/26) and Groot Omroepkoor (since 2026/27) as a freelance first alto, along with participation in NKK NXT (Nederlands Kamerkoor) and her previous tenure as a Choir Academy Singer at the Wiener Staatsoper (2023/24).",
+    bioP3: "Lee completed her academic formation across Korea and Germany. She holds a Bachelor of Music in Voice and a Master of Music in Musicology from Ewha Womans University, followed by a Master of Music in Opera from HfM Hanns Eisler Berlin under KS. Dr. Prof. Ewa Wolak. She was honored with the Deutschlandstipendium (2022/23), 1st Prize at the Gold International Classical Music Competition (2025), and Platinum Award at the Global Young Musicians Competition (2025).",
+    eduHeader: "Education & Degrees", deg1Tag: "Bachelor Degree", deg1Name: "B.M. in Voice (Vocal Performance)",
+    deg2Tag: "Master Degree 1", deg2Name: "M.M. in Opera", deg3Tag: "Master Degree 2", deg3Name: "M.M. in Musicology",
+    repHeader: "Repertoire & Roles", repOperaTitle: "Opera Roles", repSacredTitle: "Oratorio & Sacred Repertoire",
+    collabHeader: "Artistic Collaborators", c1: "Conductors", c2: "Stage Directors", c3: "Music Coaches", c4: "Masterclasses",
+    pressHeader: "Press & Reviews", agendaTitle: "Agenda & Archive", mediaTitle: "Media",
+    contactTitle: "Let's work together.", contactNote: "For auditions, concert engagements, and project collaborations, please use the contact form or send an email directly.", sendBtn: "Send Message"
+  },
+  de: {
+    navBio: "Biografie", navAgenda: "Agenda & Archiv", navMedia: "Medien", navContact: "Kontakt",
+    bioTitle: "Biografie", downloadCv: "Vollständigen CV herunterladen (PDF)",
+    bioP1: "Die koreanische Mezzosopranistin Youngin Lee besticht durch ihr warmes, dunkles Timbre und ihre feine Musikalität. Von Rotterdam aus ist sie europaweit in Oper, Oratorium und professionellen Ensembles tätig.",
+    bioP2: "Zu ihren aktuellen Chorengagements gehören die Dutch National Opera & Ballet (seit 2025/26) und das Groot Omroepkoor (seit 2026/27) als freischaffende 1. Altistin sowie NKK NXT (Nederlands Kamerkoor) und ihre vorherige Tätigkeit an der Wiener Staatsoper (2023/24).",
+    bioP3: "Lee absolvierte ihre Ausbildung in Korea und Deutschland. Sie erwarb den Bachelor in Gesang und den Master in Musikwissenschaft an der Ewha Womans University sowie den Master in Oper an der HfM Hanns Eisler Berlin bei KS. Dr. Prof. Ewa Wolak. Sie war Stipendiatin des Deutschlandstipendiums (2022/23) und 1. Preisträgerin internationaler Wettbewerbe.",
+    eduHeader: "Ausbildung & Abschlüsse", deg1Tag: "Bachelor", deg1Name: "B.M. Gesang / Gesangspädagogik",
+    deg2Tag: "Master 1", deg2Name: "M.M. Oper", deg3Tag: "Master 2", deg3Name: "M.M. Musikwissenschaft",
+    repHeader: "Repertoire & Rollen", repOperaTitle: "Opernrollen", repSacredTitle: "Oratorium & Sakralmusik",
+    collabHeader: "Künstlerische Partner", c1: "Dirigenten", c2: "Regisseure", c3: "Korrepetitor", c4: "Meisterkurse",
+    pressHeader: "Presse & Kritiken", agendaTitle: "Agenda & Archiv", mediaTitle: "Medien",
+    contactTitle: "Lass uns zusammenarbeiten.", contactNote: "Für Auditions, Konzertanfragen und Projektanfragen nutzen Sie bitte das Kontaktformular.", sendBtn: "Nachricht Senden"
+  },
+  ko: {
+    navBio: "약력", navAgenda: "공연 정보 및 아카이브", navMedia: "미디어", navContact: "연락처",
+    bioTitle: "약력", downloadCv: "전체 프로필(CV) 다운로드 (PDF)",
+    bioP1: "메조소프라노 이영인은 깊이 있는 음색과 뛰어난 음악적 해석력을 겸비한 성악가입니다. 현재 네덜란드 로테르담을 기반으로 오페라, 오라토리오 및 유럽 최고 수준의 전문 합창단 무대에서 활발히 활동하고 있습니다.",
+    bioP2: "현재 더치 내셔널 오페라 & 발레(Dutch National Opera & Ballet, 2025/26~) 및 Groot Omroepkoor(2026/27~)의 프리랜서 1알토로 활동하고 있으며, Nederlands Kamerkoor의 NKK NXT 아티스트 및 빈 국립 오페라극장(Wiener Staatsoper, 2023/24) 합창 아카데미 단원을 역임했습니다.",
+    bioP3: "이화여자대학교에서 성악 학사(B.M.) 및 음악학 석사(M.M.)를 취득한 후 베를린 한스 아이슬러 국립음대(HfM Hanns Eisler Berlin)에서 KS. Dr. Prof. Ewa Wolak 수하에서 오페라 석사(M.M.) 과정을 졸업했습니다. 독일상(Deutschlandstipendium) 장학생으로 선정되었으며, 2025년 Gold International Classical Music Competition 1위 및 Global Young Musicians Competition 플래티넘상을 수상했습니다.",
+    eduHeader: "학력 과정", deg1Tag: "학사 과정", deg1Name: "성악과 학사 (B.M. Voice)",
+    deg2Tag: "석사 과정 1", deg2Name: "오페라과 석사 (M.M. Opera)", deg3Tag: "석사 과정 2", deg3Name: "음악학과 석사 (M.M. Musicology)",
+    repHeader: "레파토리 & 역할", repOperaTitle: "오페라 주요 역할", repSacredTitle: "오라토리오 & 종교음악",
+    collabHeader: "함께한 예술가들", c1: "지휘자", c2: "연출가", c3: "음악코치 / 반주자", c4: "마스터클래스",
+    pressHeader: "언론 및 언론 평", agendaTitle: "공연 정보 및 아카이브", mediaTitle: "미디어",
+    contactTitle: "함께 노래해요.", contactNote: "공연 문의, 오디션 및 프로젝트 협업은 이메일이나 연동 폼을 통해 연락주시기 바랍니다.", sendBtn: "메시지 보내기"
+  }
 };
-let currentLang='en';
-function applyLang(lang){currentLang=lang;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(I18N[lang][key]!==undefined)el.innerHTML=I18N[lang][key]});document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));localStorage.setItem('younginLang',lang)}
-function modeTab(id,btn){document.getElementById('agenda-mode').style.display=id==='agenda'?'block':'none';document.getElementById('archive-mode').style.display=id==='archive'?'block':'none';document.querySelectorAll('#agenda > .section-grid .subtabs .tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
-function yearTab(id,btn,groupClass){document.querySelectorAll('.'+groupClass).forEach(x=>x.style.display='none');document.getElementById(id).style.display='block';btn.parentElement.querySelectorAll('.year-btn').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
-function eduTab(id,btn){document.getElementById('edu-bachelor').style.display=id==='bachelor'?'block':'none';document.getElementById('edu-master').style.display=id==='master'?'block':'none';btn.parentElement.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
-function sendMail(e){e.preventDefault();const to='mezzo.youngin.lee@gmail.com';const subject=document.getElementById('subject').value;const body=['Name: '+document.getElementById('name').value,'Email: '+document.getElementById('email').value,'','Message:',document.getElementById('message').value].join('\n');window.location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)}
-window.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.lang)));applyLang(localStorage.getItem('younginLang')||'en')});
+
+function setLanguage(lang) {
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  const dict = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) {
+      el.textContent = dict[key];
+    }
+  });
+}
 </script>
 </body>
 </html>
